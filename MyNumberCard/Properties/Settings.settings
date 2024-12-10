@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MyNumberCard.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="NumberingMasterPath" Provider="Utils.Configuration.CommonSettingsProvider" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ConfigFilePath" Provider="Utils.Configuration.CommonSettingsProvider" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IssueLogPath" Provider="Utils.Configuration.CommonSettingsProvider" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PortNmae" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Font" Provider="Utils.Configuration.CommonSettingsProvider" Roaming="true" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">メイリオ, 12pt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

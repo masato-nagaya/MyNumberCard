@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PDC230Lib.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Status00" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:00] カードが挿入されました。</Value>
+    </Setting>
+    <Setting Name="Status01" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:01] 電源が投入されました。</Value>
+    </Setting>
+    <Setting Name="Status11" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:11] 磁気カードとして認識できないため、データを読取れません。</Value>
+    </Setting>
+    <Setting Name="Status12" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:12] データ読取時にエラーが発生しました。</Value>
+    </Setting>
+    <Setting Name="Status13" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:13] 金融系カードが挿入されました。</Value>
+    </Setting>
+    <Setting Name="Status21" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:21] 磁気カードとして認識できないため、データを書込めません。</Value>
+    </Setting>
+    <Setting Name="Status22" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:22] 書込みデータとの照合でエラーが発生しました。</Value>
+    </Setting>
+    <Setting Name="Status23" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:23] データ書込みにおいて、扱えないデータです。</Value>
+    </Setting>
+    <Setting Name="Status31" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:31] 磁気カードとして認識できないため、データを読取れません。</Value>
+    </Setting>
+    <Setting Name="Status81" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:81] 未定義のコマンドを受け付けました。</Value>
+    </Setting>
+    <Setting Name="Status82" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:82] パラメータ異常です。</Value>
+    </Setting>
+    <Setting Name="Status83" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:83] 書込み可能桁数を超えるデータを書き込もうとしました。</Value>
+    </Setting>
+    <Setting Name="Status84" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:84] 機器搬送部に異常が発生しました。</Value>
+    </Setting>
+    <Setting Name="Status92" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:92] カードセンサーに異常が発生しました。</Value>
+    </Setting>
+    <Setting Name="Status93" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:93] カードセンサーに異常が発生しました。</Value>
+    </Setting>
+    <Setting Name="Status95" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:95] カードセンサーに異常が発生しました。</Value>
+    </Setting>
+    <Setting Name="Status96" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:96] カードセンサーに異常が発生しました。</Value>
+    </Setting>
+    <Setting Name="Status97" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:97] 規格より長い磁気カードが挿入されました。</Value>
+    </Setting>
+    <Setting Name="Status98" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[ステータス:98] 規格より短い磁気カードが挿入されました。</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
