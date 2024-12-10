@@ -1,0 +1,29 @@
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\bin\Release\ConfigFile.exe.config
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\bin\Release\ConfigFile.exe
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\bin\Release\ConfigFile.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\bin\Release\EncodeData.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\bin\Release\Utils.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\bin\Release\EncodeData.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\bin\Release\Utils.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\obj\Release\ConfigFile.csprojResolveAssemblyReference.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\obj\Release\ConfigFile.Properties.Resources.resources
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\obj\Release\ConfigFile.ConfigForm.resources
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\obj\Release\ConfigFile.csproj.GenerateResource.Cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\obj\Release\ConfigFile.csproj.CoreCompileInputs.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\obj\Release\ConfigFile.exe
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\SettingFile\obj\Release\ConfigFile.pdb
+D:\SystemGear\MyNumberCard_V2\SettingFile\bin\Release\ConfigFile_Ver2.exe.config
+D:\SystemGear\MyNumberCard_V2\SettingFile\bin\Release\ConfigFile_Ver2.exe
+D:\SystemGear\MyNumberCard_V2\SettingFile\bin\Release\ConfigFile_Ver2.pdb
+D:\SystemGear\MyNumberCard_V2\SettingFile\bin\Release\EncodeData.dll
+D:\SystemGear\MyNumberCard_V2\SettingFile\bin\Release\Utils.dll
+D:\SystemGear\MyNumberCard_V2\SettingFile\bin\Release\EncodeData.pdb
+D:\SystemGear\MyNumberCard_V2\SettingFile\bin\Release\Utils.pdb
+D:\SystemGear\MyNumberCard_V2\SettingFile\obj\Release\ConfigFile.csproj.AssemblyReference.cache
+D:\SystemGear\MyNumberCard_V2\SettingFile\obj\Release\ConfigFile.Properties.Resources.resources
+D:\SystemGear\MyNumberCard_V2\SettingFile\obj\Release\ConfigFile.ConfigForm.resources
+D:\SystemGear\MyNumberCard_V2\SettingFile\obj\Release\ConfigFile.csproj.GenerateResource.cache
+D:\SystemGear\MyNumberCard_V2\SettingFile\obj\Release\ConfigFile.csproj.CoreCompileInputs.cache
+D:\SystemGear\MyNumberCard_V2\SettingFile\obj\Release\ConfigFile.csproj.CopyComplete
+D:\SystemGear\MyNumberCard_V2\SettingFile\obj\Release\ConfigFile_Ver2.exe
+D:\SystemGear\MyNumberCard_V2\SettingFile\obj\Release\ConfigFile_Ver2.pdb

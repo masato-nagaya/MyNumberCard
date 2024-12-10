@@ -1,0 +1,10 @@
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\bin\Release\PDC230Lib.dll.config
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\bin\Release\PDC230Lib.dll
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\bin\Release\PDC230Lib.pdb
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\bin\Release\Utils.dll
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\bin\Release\Utils.pdb
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\obj\Release\PDC230Lib.csproj.AssemblyReference.cache
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\obj\Release\PDC230Lib.csproj.CoreCompileInputs.cache
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\obj\Release\PDC230Lib.csproj.CopyComplete
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\obj\Release\PDC230Lib.dll
+D:\SystemGear\MyNumberCard_V2\PDC230Lib\obj\Release\PDC230Lib.pdb

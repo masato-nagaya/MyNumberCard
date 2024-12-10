@@ -1,0 +1,9 @@
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Release\PDC210Lib.dll.config
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Release\PDC210Lib.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Release\PDC210Lib.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Release\Utils.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Release\Utils.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\obj\Release\PDC210Lib.csprojResolveAssemblyReference.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\obj\Release\PDC210Lib.csproj.CoreCompileInputs.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\obj\Release\PDC210Lib.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\obj\Release\PDC210Lib.pdb

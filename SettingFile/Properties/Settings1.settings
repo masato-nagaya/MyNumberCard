@@ -1,0 +1,81 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConfigFile.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MunicipalCodeLengthMax" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="MunicipalCodeLengthMin" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="BranchOfficeLengthMax" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="BranchOfficeLengthMin" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SealRegistrationLengthMax" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="SealRegistrationLengthMin" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="NumberingMasterValue" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MunicipalCodeLengthLabelName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ヘッダー桁数</Value>
+    </Setting>
+    <Setting Name="BranchOfficeLengthLabelName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">拠点コード桁数</Value>
+    </Setting>
+    <Setting Name="SealRegistrationLengthLabelName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">印鑑登録番号桁数</Value>
+    </Setting>
+    <Setting Name="MunicipalCodeLabelName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ヘッダー</Value>
+    </Setting>
+    <Setting Name="BranchOfficeLabelName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">拠点コード</Value>
+    </Setting>
+    <Setting Name="MunicipalCodeName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">印鑑登録番号 初期値</Value>
+    </Setting>
+    <Setting Name="BranchOfficeLengthValue" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="MunicipalCodeLengthValue" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="SealRegistrationLengthValue" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="MunicipalCodeValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z99999</Value>
+    </Setting>
+    <Setting Name="BranchOfficeValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">99</Value>
+    </Setting>
+    <Setting Name="BranchOfficeLeadingCharacter" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MunicipalCodeLeadingCharacter" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SealRegistrationLeadingCharacter" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SealRegistrationValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BranchOfficeZeroSuppress" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MunicipalCodeZeroSuppress" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SealRegistrationZeroSuppress" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

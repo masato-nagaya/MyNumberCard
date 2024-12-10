@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SystemGear\\MyNumberCard_V2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCEFE55-6F71-4CC4-B173-F23337523889}|MyNumberCard\\MyNumberCard.csproj|c:\\systemgear\\mynumbercard_v2\\mynumbercard\\issueform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCEFE55-6F71-4CC4-B173-F23337523889}|MyNumberCard\\MyNumberCard.csproj|solutionrelative:mynumbercard\\issueform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0102E294-1696-4F60-B9C1-EFFC9E9B586B}|PDC230Lib\\PDC230Lib.csproj|c:\\systemgear\\mynumbercard_v2\\pdc230lib\\pdc230.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0102E294-1696-4F60-B9C1-EFFC9E9B586B}|PDC230Lib\\PDC230Lib.csproj|solutionrelative:pdc230lib\\pdc230.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 203,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PDC230.cs",
+              "DocumentMoniker": "C:\\SystemGear\\MyNumberCard_V2\\PDC230Lib\\PDC230.cs",
+              "RelativeDocumentMoniker": "PDC230Lib\\PDC230.cs",
+              "ToolTip": "C:\\SystemGear\\MyNumberCard_V2\\PDC230Lib\\PDC230.cs",
+              "RelativeToolTip": "PDC230Lib\\PDC230.cs",
+              "ViewState": "AQIAAP4AAAAAAAAAAAAEwBEBAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T01:46:32.356Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 197,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IssueForm.cs",
+              "DocumentMoniker": "C:\\SystemGear\\MyNumberCard_V2\\MyNumberCard\\IssueForm.cs",
+              "RelativeDocumentMoniker": "MyNumberCard\\IssueForm.cs",
+              "ToolTip": "C:\\SystemGear\\MyNumberCard_V2\\MyNumberCard\\IssueForm.cs",
+              "RelativeToolTip": "MyNumberCard\\IssueForm.cs",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAAKUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T01:33:50.176Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

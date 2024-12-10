@@ -1,0 +1,19 @@
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Debug\PDC210Lib.dll.config
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Debug\PDC210Lib.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Debug\PDC210Lib.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Debug\Utils.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\bin\Debug\Utils.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.csprojResolveAssemblyReference.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.csproj.CoreCompileInputs.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.pdb
+D:\SystemGear\MyNumberCard\PDC210Lib\bin\Debug\PDC210Lib.dll.config
+D:\SystemGear\MyNumberCard\PDC210Lib\bin\Debug\PDC210Lib.dll
+D:\SystemGear\MyNumberCard\PDC210Lib\bin\Debug\PDC210Lib.pdb
+D:\SystemGear\MyNumberCard\PDC210Lib\bin\Debug\Utils.dll
+D:\SystemGear\MyNumberCard\PDC210Lib\bin\Debug\Utils.pdb
+D:\SystemGear\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.csproj.AssemblyReference.cache
+D:\SystemGear\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.csproj.CoreCompileInputs.cache
+D:\SystemGear\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.csproj.CopyComplete
+D:\SystemGear\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.dll
+D:\SystemGear\MyNumberCard\PDC210Lib\obj\Debug\PDC210Lib.pdb

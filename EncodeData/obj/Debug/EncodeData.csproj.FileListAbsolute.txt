@@ -1,0 +1,23 @@
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\EncodeData\bin\Debug\EncodeData.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\EncodeData\bin\Debug\EncodeData.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\EncodeData\obj\Debug\EncodeData.csprojResolveAssemblyReference.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\EncodeData\obj\Debug\EncodeData.csproj.CoreCompileInputs.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\EncodeData\obj\Debug\EncodeData.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\EncodeData\obj\Debug\EncodeData.pdb
+D:\SystemGear\MyNumberCard\EncodeData\bin\Debug\EncodeData.dll
+D:\SystemGear\MyNumberCard\EncodeData\bin\Debug\EncodeData.pdb
+D:\SystemGear\MyNumberCard\EncodeData\obj\Debug\EncodeData.csproj.AssemblyReference.cache
+D:\SystemGear\MyNumberCard\EncodeData\obj\Debug\EncodeData.csproj.CoreCompileInputs.cache
+D:\SystemGear\MyNumberCard\EncodeData\obj\Debug\EncodeData.dll
+D:\SystemGear\MyNumberCard\EncodeData\obj\Debug\EncodeData.pdb
+C:\SystemGear\MyNumberCard_V2\EncodeData\bin\Debug\EncodeData.dll
+C:\SystemGear\MyNumberCard_V2\EncodeData\bin\Debug\EncodeData.pdb
+C:\SystemGear\MyNumberCard_V2\EncodeData\obj\Debug\EncodeData.csproj.AssemblyReference.cache
+C:\SystemGear\MyNumberCard_V2\EncodeData\obj\Debug\EncodeData.csproj.CoreCompileInputs.cache
+C:\SystemGear\MyNumberCard_V2\EncodeData\obj\Debug\EncodeData.dll
+C:\SystemGear\MyNumberCard_V2\EncodeData\obj\Debug\EncodeData.pdb
+D:\SystemGear\MyNumberCard_V2\EncodeData\bin\Debug\EncodeData.dll
+D:\SystemGear\MyNumberCard_V2\EncodeData\bin\Debug\EncodeData.pdb
+D:\SystemGear\MyNumberCard_V2\EncodeData\obj\Debug\EncodeData.csproj.CoreCompileInputs.cache
+D:\SystemGear\MyNumberCard_V2\EncodeData\obj\Debug\EncodeData.dll
+D:\SystemGear\MyNumberCard_V2\EncodeData\obj\Debug\EncodeData.pdb

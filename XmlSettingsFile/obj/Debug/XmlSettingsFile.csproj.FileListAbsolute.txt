@@ -1,0 +1,12 @@
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\XmlSettingsFile\bin\Debug\XmlSettingsFile.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\XmlSettingsFile\bin\Debug\XmlSettingsFile.pdb
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\XmlSettingsFile\obj\Debug\XmlSettingsFile.csprojResolveAssemblyReference.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\XmlSettingsFile\obj\Debug\XmlSettingsFile.csproj.CoreCompileInputs.cache
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\XmlSettingsFile\obj\Debug\XmlSettingsFile.dll
+D:\works\historys\2017\20171010 伊勢原市 マイナンバー\20.src\MyNumberCard\XmlSettingsFile\obj\Debug\XmlSettingsFile.pdb
+D:\SystemGear\MyNumberCard_V2\XmlSettingsFile\bin\Debug\XmlSettingsFile.dll
+D:\SystemGear\MyNumberCard_V2\XmlSettingsFile\bin\Debug\XmlSettingsFile.pdb
+D:\SystemGear\MyNumberCard_V2\XmlSettingsFile\obj\Debug\XmlSettingsFile.csproj.AssemblyReference.cache
+D:\SystemGear\MyNumberCard_V2\XmlSettingsFile\obj\Debug\XmlSettingsFile.csproj.CoreCompileInputs.cache
+D:\SystemGear\MyNumberCard_V2\XmlSettingsFile\obj\Debug\XmlSettingsFile.dll
+D:\SystemGear\MyNumberCard_V2\XmlSettingsFile\obj\Debug\XmlSettingsFile.pdb

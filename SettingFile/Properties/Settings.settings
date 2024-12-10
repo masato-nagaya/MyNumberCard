@@ -1,0 +1,120 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConfigFile.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AppName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ConfigFile</Value>
+    </Setting>
+    <Setting Name="Version" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.0.0.0</Value>
+    </Setting>
+    <Setting Name="MunicipalCode_LengthLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ヘッダー桁数</Value>
+    </Setting>
+    <Setting Name="MunicipalCode_LengthMin" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="MunicipalCode_LengthMax" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="MunicipalCode_Length" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="MunicipalCode_ValueLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ヘッダー</Value>
+    </Setting>
+    <Setting Name="MunicipalCode_Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">000000     1421</Value>
+    </Setting>
+    <Setting Name="MunicipalCode_PaddingLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MunicipalCode_PaddingStatus" Type="EncodeData.PaddingStat" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="MunicipalCode_PaddingCharacter" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BranchOffice_LengthLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">拠点コード桁数</Value>
+    </Setting>
+    <Setting Name="BranchOffice_LengthMin" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BranchOffice_LengthMax" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="BranchOffice_Length" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="BranchOffice_ValueLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">拠点コード</Value>
+    </Setting>
+    <Setting Name="BranchOffice_Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">400</Value>
+    </Setting>
+    <Setting Name="BranchOffice_PaddingLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BranchOffice_PaddingStatus" Type="EncodeData.PaddingStat" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="BranchOffice_PaddingCharacter" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SealRegistration_LengthLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">印鑑登録番号桁数</Value>
+    </Setting>
+    <Setting Name="SealRegistration_LengthMin" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SealRegistration_LengthMax" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="SealRegistration_Length" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="SealRegistration_ValueLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">印鑑登録番号 初期値</Value>
+    </Setting>
+    <Setting Name="SealRegistration_Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">50000001</Value>
+    </Setting>
+    <Setting Name="SealRegistration_PaddingLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">印鑑登録番号 左 データ埋め</Value>
+    </Setting>
+    <Setting Name="SealRegistration_PaddingStatus" Type="EncodeData.PaddingStat" Scope="User">
+      <Value Profile="(Default)">Left</Value>
+    </Setting>
+    <Setting Name="SealRegistration_PaddingCharacter" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Padding_LengthLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Padding_LengthMin" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Padding_LengthMax" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">69</Value>
+    </Setting>
+    <Setting Name="Padding_Length" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Padding_ValueLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Padding_Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Padding_PaddingLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">印鑑登録番号 右 データ埋め</Value>
+    </Setting>
+    <Setting Name="Padding_PaddingStatus" Type="EncodeData.PaddingStat" Scope="User">
+      <Value Profile="(Default)">Right</Value>
+    </Setting>
+    <Setting Name="Padding_PaddingCharacter" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
