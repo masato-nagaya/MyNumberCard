@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SystemGear")]
-[assembly: AssemblyProduct("MyNumberCard_Ver2")]
-[assembly: AssemblyCopyright("Copyright © 2024 SystemGear")]
+[assembly: AssemblyProduct("印鑑登録証発行システム")]
+[assembly: AssemblyCopyright("Copyright © 2025 SystemGear")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,8 +32,8 @@ using System.Runtime.InteropServices;
 // すべての値を指定するか、下のように '*' を使ってビルドおよびリビジョン番号を 
 // 既定値にすることができます:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.0.0.0")]
-[assembly: AssemblyFileVersion("2.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
 
 // read Log4Net Configuration file
 //[assembly: log4net.Config.XmlConfigurator(ConfigFile = @"Log4net.Config.xml", Watch = true)]

@@ -33,13 +33,6 @@ namespace MyNumberCard
 			{
 				try
 				{
-#if false
-					// 例外のデバッグのため、例外をスロー
-					if ((i == 2) && (bThrowExc1 == false)) {
-						bThrowExc1 = true;
-						throw new System.Exception();
-					}
-#endif
 					Array.Resize(ref iPortNum, i + 1);
 					string sTmp = s;
 					string sComNo = sTmp.Substring(sCom.Length, sTmp.Length - sCom.Length);
@@ -83,20 +76,12 @@ namespace MyNumberCard
 			{
 				try
 				{
-#if false
-					// 例外のデバッグのため、例外をスロー
-					if ((i == 2) && (bThrowExc2 == false)) {
-						bThrowExc2 = true;
-						throw new System.Exception();
-					}
-#endif
 					//Nameプロパティを取得
 					var namePropertyValue = manageObj.GetPropertyValue("Name");
 					if (namePropertyValue == null)
 					{
 						continue;
 					}
-
 					//Nameプロパティ文字列の一部が"(COM1)～(COM999)"と一致するときリストに追加"
 					string name = namePropertyValue.ToString();
 

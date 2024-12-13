@@ -8,11 +8,13 @@ namespace EncodeData {
 	public class Settings {
 		public string AppName;
 		public string Version;
-		public DataFormat MunicipalCode = new DataFormat();
-		public DataFormat BranchOffice = new DataFormat();
-		public DataFormat SealRegistration = new DataFormat();
-		public DataFormat Padding = new DataFormat();
-		public DataFormat StartPosition = new DataFormat();
+		public DataFormat StartPosition = new DataFormat();     //開始位置			//add 2024/12/11
+		public DataFormat MunicipalCode = new DataFormat();		//ヘッダー
+		public DataFormat BranchOffice = new DataFormat();      //拠点コード
+		public DataFormat SealRegistration = new DataFormat();	//印鑑登録書番号
+		public DataFormat PaddingLeft = new DataFormat();       //左詰め			//add 2024/12/11	
+		public DataFormat Padding = new DataFormat();           //右詰め
+
 	}
 
 	public class DataFormat {
@@ -25,6 +27,7 @@ namespace EncodeData {
 	public enum PaddingStat {
 		None,
 		Left,
-		Right
+		Right,
+		ON      //add 2024/12/11
 	}
 }

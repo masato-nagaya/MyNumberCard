@@ -48,7 +48,7 @@
       <Value Profile="(Default)">印鑑登録番号桁数</Value>
     </Setting>
     <Setting Name="SealRegistration_Length" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">8</Value>
+      <Value Profile="(Default)">7</Value>
     </Setting>
     <Setting Name="SealRegistration_ValueLabel" Type="System.String" Scope="Application">
       <Value Profile="(Default)">印鑑登録番号 初期値</Value>
@@ -57,10 +57,7 @@
       <Value Profile="(Default)">50000001</Value>
     </Setting>
     <Setting Name="SealRegistration_PaddingLabel" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">印鑑登録番号 左 データ埋め</Value>
-    </Setting>
-    <Setting Name="SealRegistration_PaddingStatus" Type="EncodeData.PaddingStat" Scope="User">
-      <Value Profile="(Default)">Left</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="SealRegistration_PaddingCharacter" Type="System.Char" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -90,7 +87,7 @@
       <Value Profile="(Default)">higashiomi</Value>
     </Setting>
     <Setting Name="StartPosition_Length" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">2</Value>
     </Setting>
     <Setting Name="MunicipalCode_LengthMin" Type="System.Decimal" Scope="Application">
       <Value Profile="(Default)">1</Value>
@@ -123,12 +120,51 @@
       <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="StartPosition_LengthMax" Type="System.Decimal" Scope="Application">
-      <Value Profile="(Default)">65</Value>
+      <Value Profile="(Default)">2</Value>
     </Setting>
     <Setting Name="StartPosition_PaddingCharacter" Type="System.Char" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="StartPosition_PaddingStatus" Type="EncodeData.PaddingStat" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="PaddingL_Length" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PaddingL_LengthLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PaddingL_LengthMax" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">69</Value>
+    </Setting>
+    <Setting Name="PaddingL_LengthMin" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PaddingL_PaddingCharacter" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PaddingL_PaddingLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">印鑑登録番号 左 データ埋め</Value>
+    </Setting>
+    <Setting Name="PaddingL_Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PaddingL_ValueLabel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="StartPosition_LengthLabel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">開始位置桁数</Value>
+    </Setting>
+    <Setting Name="StartPosition_PaddingLabel" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="StartPosition_Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PaddingL_PaddingStatus" Type="EncodeData.PaddingStat" Scope="User">
+      <Value Profile="(Default)">Left</Value>
+    </Setting>
+    <Setting Name="SealRegistration_PaddingStatus" Type="EncodeData.PaddingStat" Scope="User">
       <Value Profile="(Default)">None</Value>
     </Setting>
   </Settings>

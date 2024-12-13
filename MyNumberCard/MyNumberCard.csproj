@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MyNumberCard</RootNamespace>
-    <AssemblyName>MyNumberCard_Ver2</AssemblyName>
+    <AssemblyName>MyNumberCard_Ver1</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -152,10 +152,6 @@
     <ProjectReference Include="..\EncodeData\EncodeData.csproj">
       <Project>{93f67f50-ed1d-42a5-aab3-79570ed7911a}</Project>
       <Name>EncodeData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MCRW\MCRW.csproj">
-      <Project>{d9649745-f7e8-4bc6-862a-c9dd9a7ac1bb}</Project>
-      <Name>MCRW</Name>
     </ProjectReference>
     <ProjectReference Include="..\PDC230Lib\PDC230Lib.csproj">
       <Project>{0102e294-1696-4f60-b9c1-effc9e9b586b}</Project>

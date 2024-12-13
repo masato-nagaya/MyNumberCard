@@ -15,26 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_029911A16926D2C7355D3B74135A2B7B"
-        "OwnerKey" = "8:_9CFD1E58C34443389470344FC2BBA3B6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_03FBD5369A3872304F540E1D9B00A68C"
-        "OwnerKey" = "8:_029911A16926D2C7355D3B74135A2B7B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_03FBD5369A3872304F540E1D9B00A68C"
-        "OwnerKey" = "8:_9CFD1E58C34443389470344FC2BBA3B6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_2647A36007F84D238B25CAFB93849319"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2BF723E177F7EAC4CF060A7DF0FD77F4"
+        "OwnerKey" = "8:_9CFD1E58C34443389470344FC2BBA3B6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,14 +33,20 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8C94F1CCDDE9405A8BA402434AFE23EC"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_74D5FB29951588972C831C1A5B4E5C62"
+        "OwnerKey" = "8:_C51FC68DAD91C5CD977E81811B4230FC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8E2E88B82B3F2230CA9727C71456B125"
+        "MsmKey" = "8:_74D5FB29951588972C831C1A5B4E5C62"
         "OwnerKey" = "8:_9CFD1E58C34443389470344FC2BBA3B6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8C94F1CCDDE9405A8BA402434AFE23EC"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -63,18 +57,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A6833A38A1A68B8514A741516D740D84"
+        "OwnerKey" = "8:_9CFD1E58C34443389470344FC2BBA3B6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C51FC68DAD91C5CD977E81811B4230FC"
+        "OwnerKey" = "8:_9CFD1E58C34443389470344FC2BBA3B6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D70BA2DAC0F141189B4EE6922EC423E1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_DFE96B046229B5A24FE3BFD90356324A"
-        "OwnerKey" = "8:_9CFD1E58C34443389470344FC2BBA3B6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_9CFD1E58C34443389470344FC2BBA3B6"
         "MsmSig" = "8:_UNDEFINED"
@@ -82,25 +82,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_029911A16926D2C7355D3B74135A2B7B"
+        "OwnerKey" = "8:_C51FC68DAD91C5CD977E81811B4230FC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_03FBD5369A3872304F540E1D9B00A68C"
+        "OwnerKey" = "8:_74D5FB29951588972C831C1A5B4E5C62"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DFE96B046229B5A24FE3BFD90356324A"
+        "OwnerKey" = "8:_2BF723E177F7EAC4CF060A7DF0FD77F4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8E2E88B82B3F2230CA9727C71456B125"
+        "OwnerKey" = "8:_A6833A38A1A68B8514A741516D740D84"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -111,7 +111,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\MyNumberV2Setup.msi"
+        "OutputFilename" = "8:Debug\\MyNumberV1Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -143,7 +143,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\MyNumberV2Setup.msi"
+        "OutputFilename" = "8:Release\\MyNumberV1Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -198,20 +198,40 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_029911A16926D2C7355D3B74135A2B7B"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2647A36007F84D238B25CAFB93849319"
+            {
+            "SourcePath" = "8:..\\IniFile\\PDC-230.ini"
+            "TargetName" = "8:PDC-230.ini"
+            "Tag" = "8:"
+            "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2BF723E177F7EAC4CF060A7DF0FD77F4"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:PDC230Lib, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:log4net, Version=2.0.17.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_029911A16926D2C7355D3B74135A2B7B"
+                    "_2BF723E177F7EAC4CF060A7DF0FD77F4"
                     {
-                    "Name" = "8:PDC230Lib.dll"
+                    "Name" = "8:log4net.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:PDC230Lib.dll"
+            "SourcePath" = "8:log4net.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"
@@ -229,14 +249,34 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_03FBD5369A3872304F540E1D9B00A68C"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6823A0D032D845EDAD6234571C4FD703"
+            {
+            "SourcePath" = "8:..\\MyNumberCard\\bin\\Release\\log4net.xml"
+            "TargetName" = "8:log4net.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_74D5FB29951588972C831C1A5B4E5C62"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Utils, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_03FBD5369A3872304F540E1D9B00A68C"
+                    "_74D5FB29951588972C831C1A5B4E5C62"
                     {
                     "Name" = "8:Utils.dll"
                     "Attributes" = "3:512"
@@ -260,46 +300,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2647A36007F84D238B25CAFB93849319"
-            {
-            "SourcePath" = "8:..\\IniFile\\PDC-230.ini"
-            "TargetName" = "8:PDC-230.ini"
-            "Tag" = "8:"
-            "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6823A0D032D845EDAD6234571C4FD703"
-            {
-            "SourcePath" = "8:..\\MyNumberCard\\bin\\Release\\log4net.xml"
-            "TargetName" = "8:log4net.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8C94F1CCDDE9405A8BA402434AFE23EC"
             {
             "SourcePath" = "8:..\\MyNumberCard\\bin\\Release\\Log4net.Config"
@@ -320,20 +320,51 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8E2E88B82B3F2230CA9727C71456B125"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A6833A38A1A68B8514A741516D740D84"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:EncodeData, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:EncodeData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_8E2E88B82B3F2230CA9727C71456B125"
+                    "_A6833A38A1A68B8514A741516D740D84"
                     {
                     "Name" = "8:EncodeData.dll"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:EncodeData.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C51FC68DAD91C5CD977E81811B4230FC"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:PDC230Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_C51FC68DAD91C5CD977E81811B4230FC"
+                    {
+                    "Name" = "8:PDC230Lib.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:PDC230Lib.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"
@@ -369,37 +400,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DFE96B046229B5A24FE3BFD90356324A"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:log4net, Version=2.0.17.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_DFE96B046229B5A24FE3BFD90356324A"
-                    {
-                    "Name" = "8:log4net.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:log4net.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -1016,7 +1016,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9CFD1E58C34443389470344FC2BBA3B6"
             {
-            "SourcePath" = "8:..\\MyNumberCard\\obj\\Debug\\MyNumberCard_Ver2.exe"
+            "SourcePath" = "8:..\\MyNumberCard\\obj\\Release\\MyNumberCard_Ver1.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0E8E57B3A27041AB809C5828122A75E4"

@@ -184,7 +184,7 @@ namespace ConfigFile.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("8")]
+        [global::System.Configuration.DefaultSettingValueAttribute("7")]
         public int SealRegistration_Length {
             get {
                 return ((int)(this["SealRegistration_Length"]));
@@ -217,22 +217,10 @@ namespace ConfigFile.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("印鑑登録番号 左 データ埋め")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string SealRegistration_PaddingLabel {
             get {
                 return ((string)(this["SealRegistration_PaddingLabel"]));
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Left")]
-        public global::EncodeData.PaddingStat SealRegistration_PaddingStatus {
-            get {
-                return ((global::EncodeData.PaddingStat)(this["SealRegistration_PaddingStatus"]));
-            }
-            set {
-                this["SealRegistration_PaddingStatus"] = value;
             }
         }
         
@@ -334,7 +322,7 @@ namespace ConfigFile.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
         public int StartPosition_Length {
             get {
                 return ((int)(this["StartPosition_Length"]));
@@ -436,7 +424,7 @@ namespace ConfigFile.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("65")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
         public decimal StartPosition_LengthMax {
             get {
                 return ((decimal)(this["StartPosition_LengthMax"]));
@@ -464,6 +452,147 @@ namespace ConfigFile.Properties {
             }
             set {
                 this["StartPosition_PaddingStatus"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int PaddingL_Length {
+            get {
+                return ((int)(this["PaddingL_Length"]));
+            }
+            set {
+                this["PaddingL_Length"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PaddingL_LengthLabel {
+            get {
+                return ((string)(this["PaddingL_LengthLabel"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("69")]
+        public decimal PaddingL_LengthMax {
+            get {
+                return ((decimal)(this["PaddingL_LengthMax"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal PaddingL_LengthMin {
+            get {
+                return ((decimal)(this["PaddingL_LengthMin"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public char PaddingL_PaddingCharacter {
+            get {
+                return ((char)(this["PaddingL_PaddingCharacter"]));
+            }
+            set {
+                this["PaddingL_PaddingCharacter"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("印鑑登録番号 左 データ埋め")]
+        public string PaddingL_PaddingLabel {
+            get {
+                return ((string)(this["PaddingL_PaddingLabel"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PaddingL_Value {
+            get {
+                return ((string)(this["PaddingL_Value"]));
+            }
+            set {
+                this["PaddingL_Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PaddingL_ValueLabel {
+            get {
+                return ((string)(this["PaddingL_ValueLabel"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("開始位置桁数")]
+        public string StartPosition_LengthLabel {
+            get {
+                return ((string)(this["StartPosition_LengthLabel"]));
+            }
+            set {
+                this["StartPosition_LengthLabel"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string StartPosition_PaddingLabel {
+            get {
+                return ((string)(this["StartPosition_PaddingLabel"]));
+            }
+            set {
+                this["StartPosition_PaddingLabel"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string StartPosition_Value {
+            get {
+                return ((string)(this["StartPosition_Value"]));
+            }
+            set {
+                this["StartPosition_Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Left")]
+        public global::EncodeData.PaddingStat PaddingL_PaddingStatus {
+            get {
+                return ((global::EncodeData.PaddingStat)(this["PaddingL_PaddingStatus"]));
+            }
+            set {
+                this["PaddingL_PaddingStatus"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("None")]
+        public global::EncodeData.PaddingStat SealRegistration_PaddingStatus {
+            get {
+                return ((global::EncodeData.PaddingStat)(this["SealRegistration_PaddingStatus"]));
+            }
+            set {
+                this["SealRegistration_PaddingStatus"] = value;
             }
         }
     }

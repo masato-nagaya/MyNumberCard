@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodeData", "EncodeData\En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDC230Lib", "PDC230Lib\PDC230Lib.csproj", "{0102E294-1696-4F60-B9C1-EFFC9E9B586B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCRW", "MCRW\MCRW.csproj", "{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,14 +83,6 @@ Global
 		{0102E294-1696-4F60-B9C1-EFFC9E9B586B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0102E294-1696-4F60-B9C1-EFFC9E9B586B}.Release|x86.ActiveCfg = Release|Any CPU
 		{0102E294-1696-4F60-B9C1-EFFC9E9B586B}.Release|x86.Build.0 = Release|Any CPU
-		{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}.Debug|x86.Build.0 = Debug|Any CPU
-		{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}.Release|x86.ActiveCfg = Release|Any CPU
-		{D9649745-F7E8-4BC6-862A-C9DD9A7AC1BB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

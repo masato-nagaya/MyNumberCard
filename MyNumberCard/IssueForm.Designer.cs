@@ -49,7 +49,8 @@ namespace MyNumberCard {
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.StatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.CardReadButton = new System.Windows.Forms.Button();
-            this.TxtReadData = new Utils.Form.NumericTextBox();
+            this.cardReaderInfo = new Utils.Form.NumericTextBox();
+            this.OldcardInfo = new Utils.Form.NumericTextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StatusPictureBox)).BeginInit();
             this.MenuStrip.SuspendLayout();
@@ -150,7 +151,7 @@ namespace MyNumberCard {
             // 
             // NumberingButton
             // 
-            this.NumberingButton.Location = new System.Drawing.Point(13, 274);
+            this.NumberingButton.Location = new System.Drawing.Point(14, 274);
             this.NumberingButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.NumberingButton.Name = "NumberingButton";
             this.NumberingButton.Size = new System.Drawing.Size(115, 82);
@@ -162,7 +163,7 @@ namespace MyNumberCard {
             // 
             // ManualInputButton
             // 
-            this.ManualInputButton.Location = new System.Drawing.Point(136, 274);
+            this.ManualInputButton.Location = new System.Drawing.Point(137, 274);
             this.ManualInputButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ManualInputButton.Name = "ManualInputButton";
             this.ManualInputButton.Size = new System.Drawing.Size(115, 82);
@@ -286,7 +287,7 @@ namespace MyNumberCard {
             // 
             // CardReadButton
             // 
-            this.CardReadButton.Location = new System.Drawing.Point(259, 274);
+            this.CardReadButton.Location = new System.Drawing.Point(260, 274);
             this.CardReadButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.CardReadButton.Name = "CardReadButton";
             this.CardReadButton.Size = new System.Drawing.Size(115, 82);
@@ -296,18 +297,29 @@ namespace MyNumberCard {
             this.CardReadButton.UseVisualStyleBackColor = true;
             this.CardReadButton.Click += new System.EventHandler(this.CardReadButton_Click);
             // 
-            // TxtReadData
+            // cardReaderInfo
             // 
-            this.TxtReadData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtReadData.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TxtReadData.Location = new System.Drawing.Point(14, 244);
-            this.TxtReadData.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtReadData.Name = "TxtReadData";
-            this.TxtReadData.ReadOnly = true;
-            this.TxtReadData.Size = new System.Drawing.Size(659, 25);
-            this.TxtReadData.TabIndex = 7;
-            this.TxtReadData.TabStop = false;
-            this.TxtReadData.Text = "実行中は非表示";
+            this.cardReaderInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardReaderInfo.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.cardReaderInfo.Location = new System.Drawing.Point(13, 213);
+            this.cardReaderInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.cardReaderInfo.Name = "cardReaderInfo";
+            this.cardReaderInfo.ReadOnly = true;
+            this.cardReaderInfo.Size = new System.Drawing.Size(660, 25);
+            this.cardReaderInfo.TabIndex = 7;
+            this.cardReaderInfo.TabStop = false;
+            // 
+            // OldcardInfo
+            // 
+            this.OldcardInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OldcardInfo.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.OldcardInfo.Location = new System.Drawing.Point(14, 246);
+            this.OldcardInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.OldcardInfo.Name = "OldcardInfo";
+            this.OldcardInfo.ReadOnly = true;
+            this.OldcardInfo.Size = new System.Drawing.Size(660, 25);
+            this.OldcardInfo.TabIndex = 8;
+            this.OldcardInfo.TabStop = false;
             // 
             // IssueForm
             // 
@@ -315,7 +327,8 @@ namespace MyNumberCard {
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 390);
-            this.Controls.Add(this.TxtReadData);
+            this.Controls.Add(this.OldcardInfo);
+            this.Controls.Add(this.cardReaderInfo);
             this.Controls.Add(this.CardReadButton);
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.CancelButton);
@@ -335,7 +348,6 @@ namespace MyNumberCard {
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "印鑑登録番号書込処理";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.IssueForm_FormClosing);
-            this.Load += new System.EventHandler(this.IssueForm_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.IssueForm_KeyPress);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -374,6 +386,7 @@ namespace MyNumberCard {
         private System.Windows.Forms.TextBox MunicipalCodeTextBox;
         private System.Windows.Forms.ToolStripMenuItem MnuOptionCom;
         private System.Windows.Forms.Button CardReadButton;
-        private NumericTextBox TxtReadData;
+        private NumericTextBox cardReaderInfo;
+        private NumericTextBox OldcardInfo;
     }
 }

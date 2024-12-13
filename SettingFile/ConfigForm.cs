@@ -15,23 +15,42 @@ namespace ConfigFile
         public ConfigForm()
         {
             InitializeComponent();
-            
-            //
-            // MunicipalCode 設定
-            //
+                        
+            // ヘッダー設定            
             MunicipalCodeTextBox.MaxLength = (int)MunicipalCodeLengthUpDown.Value;
-
-            //
-            // BranchOffice 設定
-            //
+                        
+            // 拠点コード設定            
             BranchOfficeTextBox.MaxLength = (int)BranchOfficeLengthUpDown.Value;
 
-            //
-            // SealRegistration 設定
-            //
+            // 印鑑登録番号設定            
             NumberingMasterTextBox.MaxLength = (int)SealRegistrationLengthUpDown.Value;
 
-            if (Properties.Settings.Default.SealRegistration_PaddingCharacter == '0')
+            //add 2024/12/11 str
+
+            //if (Properties.Settings.Default.SealRegistration_PaddingCharacter == '0')
+            //{
+            //    LeftPaddingZeroRadioButton.Checked = true;
+            //}
+            //else
+            //{
+            //    LeftPaddingSpaceRadioButton.Checked = true;
+            //}
+
+            // 印鑑登録番号 左 データ埋め設定
+            if (Properties.Settings.Default.PaddingL_PaddingStatus == PaddingStat.None)
+            {
+                LeftPaddingCheckBox.Checked = false;
+                LeftPaddingZeroRadioButton.Enabled = false;
+                LeftPaddingSpaceRadioButton.Enabled = false;
+            }
+            else
+            {
+                LeftPaddingCheckBox.Checked = true;
+                LeftPaddingZeroRadioButton.Enabled = true;
+                LeftPaddingSpaceRadioButton.Enabled = true;
+            }
+
+            if (Properties.Settings.Default.PaddingL_PaddingCharacter == '0')
             {
                 LeftPaddingZeroRadioButton.Checked = true;
             }
@@ -40,10 +59,9 @@ namespace ConfigFile
                 LeftPaddingSpaceRadioButton.Checked = true;
             }
 
-            //
-            // Padding 設定
-            //
+            //add 2024/12/11 end
 
+            // 印鑑登録番号 右 データ埋め 設定
             if (Properties.Settings.Default.Padding_PaddingStatus == PaddingStat.None)
             {
                 PaddingCheckBox.Checked = false;
@@ -67,7 +85,6 @@ namespace ConfigFile
             }
             
         }
-
         private void MakeFileButton_Click(object sender, EventArgs e)
         {
             //登録可能桁数
@@ -75,9 +92,8 @@ namespace ConfigFile
 
             //ヘッダー桁数のチェック
             if (MunicipalCodeTextBox.Text.Length < MunicipalCodeLengthUpDown.Value)
-            {
-                //MessageBox.Show("ヘッダ桁数が、必要桁数に達していません。");				//del 2024/08/09				
-                MessageBox.Show("ヘッダ桁数が、必要桁数に達していません。", "入力エラー");   //add 2024/08/09
+            {                
+                MessageBox.Show("ヘッダ桁数が、必要桁数に達していません。", "入力エラー");
                 return;
             }
             //ヘッダー入力値のチェック
@@ -93,7 +109,7 @@ namespace ConfigFile
                 //桁数のチェック
                 if (BranchOfficeTextBox.Text.Length < BranchOfficeLengthUpDown.Value)
                 {
-                    MessageBox.Show("拠点コード桁数が、必要桁数に達していません。", "入力エラー");   //add 2024/08/09
+                    MessageBox.Show("拠点コード桁数が、必要桁数に達していません。", "入力エラー");
                     return;
                 }
                 //入力値のチェック
@@ -130,11 +146,15 @@ namespace ConfigFile
                 }
             }
 
+            //add 2024/12/11 str
+            
             //開始位置
             _Settings.StartPosition.Value = StartPositionDigitUpDown.Value.ToString();
             _Settings.StartPosition.Length = Properties.Settings.Default.StartPosition_Length;
             _Settings.StartPosition.PaddingStatus = Properties.Settings.Default.StartPosition_PaddingStatus;
             _Settings.StartPosition.PaddingCharacter = Properties.Settings.Default.StartPosition_PaddingCharacter;
+
+            //add 2024/12/11 end
 
             //ヘッダー
             _Settings.MunicipalCode.Value = MunicipalCodeTextBox.Text;
@@ -143,39 +163,77 @@ namespace ConfigFile
             _Settings.MunicipalCode.PaddingCharacter = Properties.Settings.Default.MunicipalCode_PaddingCharacter;
 
             //拠点コード
+
+            //add 2024/12/11 str            
+            
+            //_Settings.BranchOffice.Value = BranchOfficeTextBox.Text;
+            //_Settings.BranchOffice.Length = BranchOfficeLengthUpDown.Value;
+            
             if (BranchOfficeCheckBox.Checked == true)
             {
                 _Settings.BranchOffice.Value = BranchOfficeTextBox.Text;
-                _Settings.BranchOffice.Length = BranchOfficeLengthUpDown.Value;
+                _Settings.BranchOffice.Length = BranchOfficeLengthUpDown.Value;                
+                _Settings.BranchOffice.PaddingStatus = PaddingStat.ON;
             }
             else
             {
                 _Settings.BranchOffice.Value = "0";
                 _Settings.BranchOffice.Length = 0;
-            }
-            _Settings.BranchOffice.PaddingStatus = Properties.Settings.Default.BranchOffice_PaddingStatus;
+                _Settings.BranchOffice.PaddingStatus = Properties.Settings.Default.BranchOffice_PaddingStatus;
+                _Settings.BranchOffice.PaddingStatus = PaddingStat.None;
+            }            
             _Settings.BranchOffice.PaddingCharacter = Properties.Settings.Default.BranchOffice_PaddingCharacter;
+
+            //add 2024/12/11 end
 
             //印鑑登録番号
             _Settings.SealRegistration.Value = NumberingMasterTextBox.Text;
             _Settings.SealRegistration.Length = SealRegistrationLengthUpDown.Value;
-            _Settings.SealRegistration.PaddingStatus = Properties.Settings.Default.SealRegistration_PaddingStatus;
+
+            //add 2024/12/11 str
+
+            //_Settings.SealRegistration.PaddingStatus = Properties.Settings.Default.SealRegistration_PaddingStatus;
+            //if (LeftPaddingCheckBox.Checked == true)
+            //{
+            //    _Settings.SealRegistration.PaddingStatus = PaddingStat.Left;
+            //}
+            //else
+            //{
+            //    _Settings.SealRegistration.PaddingStatus = PaddingStat.None;
+            //}
+            //if (LeftPaddingZeroRadioButton.Checked == true)
+            //{
+            //    _Settings.SealRegistration.PaddingCharacter = '0';
+            //}
+            //else
+            //{
+            //    _Settings.SealRegistration.PaddingCharacter = ' ';
+            //}
+
+            _Settings.SealRegistration.PaddingStatus = PaddingStat.None;
+            _Settings.SealRegistration.PaddingCharacter = Properties.Settings.Default.SealRegistration_PaddingCharacter;
+
+            //印鑑登録番号 左	 データ埋め            
+            _Settings.PaddingLeft.Value = Properties.Settings.Default.PaddingL_Value;
+            _Settings.PaddingLeft.Length = Properties.Settings.Default.PaddingL_Length;
             if (LeftPaddingCheckBox.Checked == true)
             {
-                _Settings.SealRegistration.PaddingStatus = PaddingStat.Left;
+                _Settings.PaddingLeft.PaddingStatus = PaddingStat.Left;
             }
             else
             {
-                _Settings.SealRegistration.PaddingStatus = PaddingStat.None;
+                _Settings.PaddingLeft.PaddingStatus = PaddingStat.None;
             }
             if (LeftPaddingZeroRadioButton.Checked == true)
             {
-                _Settings.SealRegistration.PaddingCharacter = '0';
+                _Settings.PaddingLeft.PaddingCharacter = '0';
             }
             else
             {
-                _Settings.SealRegistration.PaddingCharacter = ' ';
+                _Settings.PaddingLeft.PaddingCharacter = ' ';
             }
+
+            //add 2024/12/11 end
 
             //印鑑登録番号 右	 データ埋め
             _Settings.Padding.Value = Properties.Settings.Default.Padding_Value;
@@ -196,7 +254,6 @@ namespace ConfigFile
             {
                 _Settings.Padding.PaddingCharacter = ' ';
             }
-
             // 保存場所が決定されればxmlファイル出力
             if (SaveConfigFileDialog.FileName == "Config.xml")
             { 
@@ -211,39 +268,30 @@ namespace ConfigFile
                 _SettingsFile.Write(_Settings);
                 Properties.Settings.Default.Save();
             }
-        }
-
-        /// <summary>
-        /// ヘッダーのバリデーションチェック
-        /// </summary>
+        }        
+        // ヘッダーのバリデーションチェック        
         private bool ValidateMunicipalCodeText(string inputText)
         {
             // 半角数字、半角スペース、大文字Sのみ許可
             string pattern = @"^[0-9S\s]+$";
             return Regex.IsMatch(inputText, pattern);
-        }
-
-        /// <summary>
-        /// 拠点コードのバリデーションチェック
-        /// </summary>
+        }                
+        // 拠点コードのバリデーションチェック        
         private bool ValidateBranchOfficeText(string inputText)
         {
             // 半角数字、半角スペース、大文字アルファベットのみ許可
             string pattern = @"^[0-9A-Z\s]+$";
             return Regex.IsMatch(inputText, pattern);
         }
-
+        // 採番マスタファイル 作成
         private void NumberingMasterButton_Click(object sender, EventArgs e)
         {
             if (NumberingMasterTextBox.Text == string.Empty)
-            {
-                //MessageBox.Show("カード番号 初期値が入力されていません。");				//del 2024/08/09				
-                MessageBox.Show("カード番号 初期値が入力されていません。", "設定エラー");    //add 2024/08/09
+            {                
+                MessageBox.Show("カード番号 初期値が入力されていません。", "設定エラー");
                 return;
             }
-
             _NumberingMaster.Number = ulong.Parse(NumberingMasterTextBox.Text);
-
             if (SaveNumberingMasterFileDialog.FileName == "NumberingMaster.xml")
             {
             }
@@ -262,37 +310,32 @@ namespace ConfigFile
         {
             MunicipalCodeTextBox.Text = string.Empty;
             MunicipalCodeTextBox.MaxLength = (int)MunicipalCodeLengthUpDown.Value;
-
         }
-
         private void BranchOfficeLengthUpDown_ValueChanged(object sender, EventArgs e)
         {
             BranchOfficeTextBox.Text = string.Empty;
             BranchOfficeTextBox.MaxLength = (int)BranchOfficeLengthUpDown.Value;
         }
-
         private void SealRegistrationLengthUpDown_ValueChanged(object sender, EventArgs e)
         {
             NumberingMasterTextBox.Text = string.Empty;
             NumberingMasterTextBox.MaxLength = (int)SealRegistrationLengthUpDown.Value;
         }
-
         private void PaddingCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             RightPaddingZeroRadioButton.Enabled = PaddingCheckBox.Checked;
             RightPaddingSpaceRadioButton.Enabled = PaddingCheckBox.Checked;
         }
-
         private void LeftPaddingCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             LeftPaddingZeroRadioButton.Enabled = LeftPaddingCheckBox.Checked;
             LeftPaddingSpaceRadioButton.Enabled = LeftPaddingCheckBox.Checked;
         }
-
         private void BranchOfficeCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             BranchOfficeLengthUpDown.Enabled = BranchOfficeCheckBox.Checked;
             BranchOfficeTextBox.Enabled = BranchOfficeCheckBox.Checked;
         }
+        
     }
 }
