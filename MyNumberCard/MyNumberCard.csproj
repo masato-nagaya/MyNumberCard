@@ -189,6 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyNumberCard_128x128.ico" />
+    <None Include="Picture\Green.png" />
     <Content Include="Picture\MyNumberCard.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

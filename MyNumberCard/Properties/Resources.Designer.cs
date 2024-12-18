@@ -90,6 +90,16 @@ namespace MyNumberCard.Properties {
         }
         
         /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap Green {
+            get {
+                object obj = ResourceManager.GetObject("Green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   設定ファイルが見つかりません。 アプリケーションを終了します。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string NotFoundConfigFile {

@@ -52,10 +52,10 @@ namespace ConfigFile {
             this.SaveConfigFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.NumberingMasterTextBox = new Utils.Form.NumericTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.NumberingMasterButton = new System.Windows.Forms.Button();
             this.SaveNumberingMasterFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.NumberingMasterTextBox = new Utils.Form.NumericTextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartPositionDigitUpDown)).BeginInit();
@@ -369,6 +369,11 @@ namespace ConfigFile {
             0,
             0,
             0});
+            this.BranchOfficeLengthUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.BranchOfficeLengthUpDown.Name = "BranchOfficeLengthUpDown";
             this.BranchOfficeLengthUpDown.Size = new System.Drawing.Size(74, 19);
             this.BranchOfficeLengthUpDown.TabIndex = 1;
@@ -414,18 +419,6 @@ namespace ConfigFile {
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "採番マスタファイル作成";
             // 
-            // NumberingMasterTextBox
-            // 
-            this.NumberingMasterTextBox.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.NumberingMasterTextBox.Location = new System.Drawing.Point(135, 45);
-            this.NumberingMasterTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.NumberingMasterTextBox.MaxLength = 7;
-            this.NumberingMasterTextBox.Name = "NumberingMasterTextBox";
-            this.NumberingMasterTextBox.Size = new System.Drawing.Size(145, 19);
-            this.NumberingMasterTextBox.TabIndex = 3;
-            this.NumberingMasterTextBox.TabStop = false;
-            this.NumberingMasterTextBox.Text = "5000001";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -451,6 +444,18 @@ namespace ConfigFile {
             // 
             this.SaveNumberingMasterFileDialog.FileName = "NumberingMaster.xml";
             this.SaveNumberingMasterFileDialog.Filter = "\"XMLファイル(*.xml)|*.xml|すべてのファイル(*.*)|*.*\";";
+            // 
+            // NumberingMasterTextBox
+            // 
+            this.NumberingMasterTextBox.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.NumberingMasterTextBox.Location = new System.Drawing.Point(135, 45);
+            this.NumberingMasterTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.NumberingMasterTextBox.MaxLength = 7;
+            this.NumberingMasterTextBox.Name = "NumberingMasterTextBox";
+            this.NumberingMasterTextBox.Size = new System.Drawing.Size(145, 19);
+            this.NumberingMasterTextBox.TabIndex = 3;
+            this.NumberingMasterTextBox.TabStop = false;
+            this.NumberingMasterTextBox.Text = "5000001";
             // 
             // ConfigForm
             // 

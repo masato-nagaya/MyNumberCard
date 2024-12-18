@@ -121,38 +121,41 @@
   <data name="Orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture\Orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PDC230Disconnected" xml:space="preserve">
-    <value>PDC-230が未接続です。</value>
+  <data name="NotFoundConfigFile" xml:space="preserve">
+    <value>設定ファイルが見つかりません。 アプリケーションを終了します。</value>
   </data>
   <data name="FirstSettingMessage" xml:space="preserve">
     <value>アプリケーションの設定が終了していません。
 アプリケーションの設定を行いますか？</value>
   </data>
-  <data name="PDC230MultipleConnections" xml:space="preserve">
-    <value>PDC-230が複数台接続されています。</value>
+  <data name="FirstSettiingTitle" xml:space="preserve">
+    <value>初期設定</value>
   </data>
   <data name="Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture\Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FirstSettiingTitle" xml:space="preserve">
-    <value>初期設定</value>
-  </data>
-  <data name="NotFoundConfigFile" xml:space="preserve">
-    <value>設定ファイルが見つかりません。 アプリケーションを終了します。</value>
-  </data>
-  <data name="Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture\Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PDC230Disconnected" xml:space="preserve">
+    <value>PDC-230が未接続です。</value>
   </data>
   <data name="RestartMessage" xml:space="preserve">
     <value>アプリケーションを再起動します。</value>
   </data>
+  <data name="Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDC230MultipleConnections" xml:space="preserve">
+    <value>PDC-230が複数台接続されています。</value>
+  </data>
   <data name="Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture\Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDC230Error" xml:space="preserve">
+    <value>PDC-230でエラーが発生しました。</value>
   </data>
   <data name="White" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture\White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PDC230Error" xml:space="preserve">
-    <value>PDC-230でエラーが発生しました。</value>
+  <data name="Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

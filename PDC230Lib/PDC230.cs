@@ -149,7 +149,7 @@ namespace PDC230Lib
                                                                             //1回書込み
                                                                             //1回書込み（自動排出）
                                                                             //読取テスト
-        private readonly byte[] COMMAND_C = { 0x02, 0x43, 0x03, 0x40 };     //直線コマンドキャンセル
+        private readonly byte[] COMMAND_C = { 0x02, 0x43, 0x03, 0x40 };     //直前コマンドキャンセル
         private readonly byte[] COMMAND_I = { 0x02, 0x49, 0x03, 0x4a };     //カード挿入
         private readonly byte[] COMMAND_E = { 0x02, 0x45, 0x03, 0x46 };     //カード排出
         private readonly byte[] COMMAND_F = { 0x02, 0x46, 0x03, 0x45 };     //カード強制排出

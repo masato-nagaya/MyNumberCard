@@ -47,7 +47,6 @@ namespace Utils.Xml
         //    try
         //    {
         //        using (FileStream stream = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.Read))
-
         //        {
         //            using (StreamReader sr = new StreamReader(_path, new UTF8Encoding(false)))                    
         //            {
@@ -86,7 +85,7 @@ namespace Utils.Xml
                     if (attempt >= maxRetries)
                     {
                         // リトライ失敗時のエラーハンドリング
-                        throw new IOException("採番ファイルを取得出来ませんでした。時間を置いてから再度採番処理を実行してください。", ex);
+                        throw new IOException("カード番号を取得出来ませんでした。時間を置いてから再度採番処理を実行してください。", ex);
                     }
 
                     // リトライ間隔を指定して待機

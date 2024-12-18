@@ -111,12 +111,11 @@ namespace MyNumberCard
 			}
 		}
 				
-		public bool DlgResult   //ダイアログの結果の取得
+		public bool DlgResult   
 		{
+			//ダイアログの結果の取得
 			get { return pDlgResult; }
 		}
-
-
 		public int ComPortNum
 		{
 			get
@@ -149,9 +148,8 @@ namespace MyNumberCard
 					}
 				}
 			}
-		}
-
-        private void BtnOK_Click(object sender, EventArgs e)
+		}		
+		private void BtnOK_Click(object sender, EventArgs e)
         {
             //「設定」で終了するので、結果をtrueにする。
             pDlgResult = true;

@@ -308,6 +308,7 @@ namespace MyNumberCard {
             this.cardReaderInfo.Size = new System.Drawing.Size(660, 25);
             this.cardReaderInfo.TabIndex = 7;
             this.cardReaderInfo.TabStop = false;
+            this.cardReaderInfo.Visible = false;
             // 
             // OldcardInfo
             // 
@@ -320,6 +321,7 @@ namespace MyNumberCard {
             this.OldcardInfo.Size = new System.Drawing.Size(660, 25);
             this.OldcardInfo.TabIndex = 8;
             this.OldcardInfo.TabStop = false;
+            this.OldcardInfo.Visible = false;
             // 
             // IssueForm
             // 

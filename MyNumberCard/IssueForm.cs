@@ -28,7 +28,8 @@ namespace MyNumberCard
 
         private bool NumberingProc = true;  // 採番モードフラグ
         private bool IssueProc = false;     // 発行モードフラグ
-        private bool CardReadProc = false;  // カード読取モードフラグ
+        private bool CardReadProc = false;  // カード読取フラグ
+        private bool CardWriteProc = false;  // 読込情報書込みフラグ
 
         //add 2024/12/11 str
         //private char PaddingChar;
@@ -51,7 +52,7 @@ namespace MyNumberCard
             string logFolder = Properties.Settings.Default.IssueLogPath;
             InitializeLog4Net(logFolder);
             logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-                        
+
             //保存場所取得
             Assembly myAssembly = Assembly.GetEntryAssembly();
             string path = myAssembly.Location;
@@ -67,22 +68,26 @@ namespace MyNumberCard
                 //ポート番号から名称を作成                                
                 PortName = "COM" + ComPortNum.ToString();
             }
-            
+
             //add 2024/12/11 str
 
             //PDC-230が接続されているポートを検索・比較・更新
-            
+
             string[] port = GetPortNames();
 
-            if (!(port[0] == PortName))
+            if (!(port == null))
             {
-                if (DialogResult.OK == MessageBox.Show("機器が接続されている通信ポートと異なる通信ポートが登録されています。\n変更しますか？", "通信ポート", MessageBoxButtons.OKCancel))
+                if (!(port[0] == PortName))
                 {
-                    ComPortNum = int.Parse(port[0].Replace("COM",""));
-                    ClsIniFileHandler.WritePrivateProfileString("COM", "PORT" , ComPortNum.ToString(), IniFilePath);
+                    if (DialogResult.OK == MessageBox.Show("機器が接続されている通信ポートと異なる通信ポートが登録されています。\n変更しますか？", "通信ポート", MessageBoxButtons.OKCancel))
+                    {
+                        //ファイルの中身を書き換え
+                        ComPortNum = int.Parse(port[0].Replace("COM", ""));
+                        ClsIniFileHandler.WritePrivateProfileString("COM", "PORT", ComPortNum.ToString(), IniFilePath);
+                    }
                 }
             }
-            
+
             //add 2024/12/11 end
 
             InputModeChange();
@@ -204,7 +209,7 @@ namespace MyNumberCard
             StatusLabel.Text = str;
             logger.Debug(str);
         }
-                
+
         #region PDC230
         private string[] GetPortNames(string IniFile = "")
         {
@@ -224,7 +229,7 @@ namespace MyNumberCard
             {
                 //ポート検索
                 port = PDC230.GePortNames();
-            }                     
+            }
 
             if (0 == port.Length)
             {
@@ -249,6 +254,7 @@ namespace MyNumberCard
             {
                 logger.Debug("GetPortName:" + port[0]);
             }
+
             return port;
 
         }
@@ -318,8 +324,12 @@ namespace MyNumberCard
         private void NumberingButton_Click(object sender, System.EventArgs e)
         {
 
-            IssueWaitModeChange();
+            //add 2024/12/11 str            
+            StatusPictureBox.Image = Properties.Resources.White;
+            CardReadProc = false;
+            //add 2024/12/11
 
+            IssueWaitModeChange();
             try
             {
                 _NumberingMaster = (NumberingMaster)_NumberingMasterFile.Read();
@@ -342,11 +352,13 @@ namespace MyNumberCard
                     NumberingProc = true;
                 }
             }
+            //add 2024/12/11 str            
             catch (IOException ex)
             {
-                MessageBox.Show(ex.Message, "ファイルエラー");
+                MessageBox.Show(ex.Message, "ファイルオープンエラー");
                 InputModeChange();
             }
+            //add 2024/12/11 end
             catch (Exception)
             {
                 MessageBox.Show(Properties.Resources.NotFoundConfigFile + "\nシステム管理者に問い合わせてください。", "システムエラー");
@@ -359,6 +371,11 @@ namespace MyNumberCard
         // 印鑑登録番号 入力ボタンクリック
         private void ManualInputButton_Click(object sender, System.EventArgs e)
         {
+            //add 2024/12/11 str            
+            StatusPictureBox.Image = Properties.Resources.White;
+            CardReadProc = false;
+            //add 2024/12/11
+
             IssueWaitModeChange();
             NumberingTextBox.Text = string.Empty;
             NumberingTextBox.ReadOnly = false;
@@ -412,8 +429,11 @@ namespace MyNumberCard
 
                 IssueProc = true;
                 _canceled = false;
+                CardReadProc = false;   //add 2024/12/11
+
                 string data = string.Empty;
                 string stat = string.Empty;
+
                 PDC230 pdc230 = new PDC230(port[0], 9600, Parity.Even, 8, StopBits.One);
 
                 //add 2024/12/11 str                
@@ -430,10 +450,10 @@ namespace MyNumberCard
                 {
                     pdc230.Open();
                     pdc230.Cancel();
+                    pdc230.Insert();
 
                     DisplayDescription("発行処理を行います。カードを挿入してください。");
-
-                    pdc230.Insert();
+                                       
                     while (true)
                     {
                         Thread.Sleep(200);
@@ -470,64 +490,72 @@ namespace MyNumberCard
                                 break;
                             }
                         }
-                        //add 2024/12/11 end
 
-                        DisplayDescription("発行処理処理中です。");
-                        WriteingModeChange();
-                        StatusPictureBox.Image = Properties.Resources.Orange;
-
-                        //add 2024/12/11 str
-
-                        //pdc230.CardWrite(MunicipalCodeTextBox.Text + BranchOfficeTextBox.Text + NumberingTextBox.Text, PaddingChar);
-
-                        //左詰め
-                        if ((!(FirstPoint == 1) && PaddingcheckL == "Left"))
+                        if (stat != string.Empty)
                         {
-                            //「0 or 空白」で埋める
-                            width = FirstPoint - 1;
-                            padding = PaddingCharL;
-                            cardReaderInfo.Text = cardReaderInfo.Text.PadLeft(width, padding);
+                            pdc230.Eject();
                         }
-                        else if ((!(FirstPoint == 1) && PaddingcheckL == "None"))
-                        {
-                            //前のカード情報を取得・埋め込み                            
-                            cardReaderInfo.Text = OldcardInfo.Text.Substring(0, Math.Min(FirstPoint - 1, OldcardInfo.Text.Length));
-                        }
+                        else
+                        { 
+                            //add 2024/12/11 end
 
-                        //ヘッダー + 拠点 + 印鑑登録番号
-                        cardReaderInfo.Text += MunicipalCodeTextBox.Text + BranchOfficeTextBox.Text + NumberingTextBox.Text;
+                            DisplayDescription("発行処理中です。");
+                            WriteingModeChange();
+                            StatusPictureBox.Image = Properties.Resources.Orange;
 
-                        //右詰め
-                        if ((!(FirstPoint == 65) && PaddingcheckR == "Right"))
-                        {
-                            //「0 or 空白」で埋める
-                            width = 69;
-                            padding = PaddingCharR;
-                            cardReaderInfo.Text = cardReaderInfo.Text.PadRight(width, padding);
-                        }
-                        else if ((!(FirstPoint == 65) && PaddingcheckR == "None"))
-                        {
-                            //前のカード情報を取得・埋め込み                            
-                            cardReaderInfo.Text += OldcardInfo.Text.Substring(cardReaderInfo.Text.Length);
-                        }
+                            //add 2024/12/11 str
 
-                        pdc230.CardWrite(cardReaderInfo.Text);
+                            //pdc230.CardWrite(MunicipalCodeTextBox.Text + BranchOfficeTextBox.Text + NumberingTextBox.Text, PaddingChar);
 
-                        //add 2024/12/11 end
-
-                        while (true)
-                        {
-                            Thread.Sleep(200);
-                            Application.DoEvents();
-                            data = pdc230.GetData();
-                            if (data != string.Empty)
+                            //左詰め
+                            if ((!(FirstPoint == 1) && PaddingcheckL == "Left"))
                             {
-                                break;
+                                //「0 or 空白」で埋める
+                                width = FirstPoint - 1;
+                                padding = PaddingCharL;
+                                cardReaderInfo.Text = cardReaderInfo.Text.PadLeft(width, padding);
                             }
-                            stat = pdc230.GetStatus();
-                            if (stat != string.Empty)
+                            else if ((!(FirstPoint == 1) && PaddingcheckL == "None"))
                             {
-                                break;
+                                //前のカード情報を取得・埋め込み                            
+                                cardReaderInfo.Text = OldcardInfo.Text.Substring(0, Math.Min(FirstPoint - 1, OldcardInfo.Text.Length));
+                            }
+
+                            //ヘッダー + 拠点 + 印鑑登録番号
+                            cardReaderInfo.Text += MunicipalCodeTextBox.Text + BranchOfficeTextBox.Text + NumberingTextBox.Text;
+
+                            //右詰め
+                            if ((!(FirstPoint == 65) && PaddingcheckR == "Right"))
+                            {
+                                //「0 or 空白」で埋める
+                                width = 69;
+                                padding = PaddingCharR;
+                                cardReaderInfo.Text = cardReaderInfo.Text.PadRight(width, padding);
+                            }
+                            else if ((!(FirstPoint == 65) && PaddingcheckR == "None"))
+                            {
+                                //前のカード情報を取得・埋め込み                            
+                                cardReaderInfo.Text += OldcardInfo.Text.Substring(cardReaderInfo.Text.Length);
+                            }
+
+                            pdc230.CardWrite(cardReaderInfo.Text);
+
+                            //add 2024/12/11 end
+
+                            while (true)
+                            {
+                                Thread.Sleep(200);
+                                Application.DoEvents();
+                                data = pdc230.GetData();
+                                if (data != string.Empty)
+                                {
+                                    break;
+                                }
+                                stat = pdc230.GetStatus();
+                                if (stat != string.Empty)
+                                {
+                                    break;
+                                }
                             }
                         }
 
@@ -584,6 +612,8 @@ namespace MyNumberCard
         {
             if (DialogResult.OK == MessageBox.Show("カード情報を読み込みますか？", "カード読取", MessageBoxButtons.OKCancel))
             {
+                                
+                StatusPictureBox.Image = Properties.Resources.Green;
 
                 //カード情報読取                               
 
@@ -613,9 +643,11 @@ namespace MyNumberCard
                 IssueProc = true;
                 _canceled = false;
                 CardReadProc = true;
+                CardWriteProc = true;
 
                 string data = string.Empty;
                 string stat = string.Empty;
+
                 PDC230 pdc230 = new PDC230(port[0], 9600, Parity.Even, 8, StopBits.One);
 
                 cardReaderInfo.Text = "";
@@ -644,8 +676,8 @@ namespace MyNumberCard
                             break;
                         }
                     }
-                    if (_canceled != true)
 
+                    if (_canceled != true)
                     {
 
                         pdc230.CardRead();
@@ -658,13 +690,12 @@ namespace MyNumberCard
                             data = pdc230.GetData();
                             if (data != string.Empty)
                             {
-                                cardReaderInfo.Text = data;                                
+                                cardReaderInfo.Text = data;
                                 break;
                             }
                             stat = pdc230.GetStatus();
                             if (stat != string.Empty)
                             {
-                                CardReadProc = false;
                                 break;
                             }
                         }
@@ -673,60 +704,59 @@ namespace MyNumberCard
 
                         DisplayDescription("カード読込完了。");
 
-                        if (CardReadProc == false)
+                        if (!(stat != string.Empty))
                         {
-                            MessageBox.Show("カードの中身を読み込めませんでした。", "カード読み込みエラー");
-                        }
-                        else if (DialogResult.OK == MessageBox.Show("読み込んだカード情報を書込みますか？", "カード発行", MessageBoxButtons.OKCancel))
-                        {
-                            //カード情報書込
-                            StatusPictureBox.Image = Properties.Resources.Blue;
-                            IssueingModeChange();
-                            IssueProc = true;
-                            _canceled = false;
-                            DisplayDescription("発行処理を行います。カードを挿入してください。");
-                            pdc230.Insert();
-                            while (true)
+                            if (DialogResult.OK == MessageBox.Show("読み込んだカード情報を書込みますか？", "カード発行", MessageBoxButtons.OKCancel))
                             {
-                                Thread.Sleep(200);
-                                Application.DoEvents();
-                                stat = pdc230.GetStatus();
-                                if (stat != string.Empty)
-                                {
-                                    break;
-                                }
-                                if (_canceled == true)
-                                {
-                                    pdc230.Cancel();
-                                    break;
-                                }
-                            }
-                            if (_canceled != true)
-                            {
-                                DisplayDescription("発行処理処理中です。");
-                                WriteingModeChange();
-                                StatusPictureBox.Image = Properties.Resources.Orange;
-                                pdc230.CardWrite(cardReaderInfo.Text);
+                                //カード情報書込
+                                StatusPictureBox.Image = Properties.Resources.Blue;
+                                IssueingModeChange();
+                                IssueProc = true;
+                                _canceled = false;
+                                DisplayDescription("発行処理を行います。カードを挿入してください。");
+                                pdc230.Insert();
                                 while (true)
                                 {
                                     Thread.Sleep(200);
                                     Application.DoEvents();
-                                    data = pdc230.GetData();
-                                    if (data != string.Empty)
-                                    {
-                                        break;
-                                    }
                                     stat = pdc230.GetStatus();
                                     if (stat != string.Empty)
                                     {
                                         break;
                                     }
+                                    if (_canceled == true)
+                                    {
+                                        pdc230.Cancel();
+                                        break;
+                                    }
+                                }
+                                if (_canceled != true)
+                                {
+                                    DisplayDescription("発行処理中です。");
+                                    WriteingModeChange();
+                                    StatusPictureBox.Image = Properties.Resources.Orange;
+                                    pdc230.CardWrite(cardReaderInfo.Text);
+                                    while (true)
+                                    {
+                                        Thread.Sleep(200);
+                                        Application.DoEvents();
+                                        data = pdc230.GetData();
+                                        if (data != string.Empty)
+                                        {
+                                            break;
+                                        }
+                                        stat = pdc230.GetStatus();
+                                        if (stat != string.Empty)
+                                        {
+                                            break;
+                                        }
+                                    }
                                 }
                             }
-                        }
-                        else
-                        {
-                            CardReadProc = false;
+                            else
+                            {
+                                CardWriteProc = false;
+                            }
                         }
                     }
                     pdc230.Close();
@@ -736,14 +766,14 @@ namespace MyNumberCard
                         StatusPictureBox.Image = Properties.Resources.White;
                         InputModeChange();
                         _canceled = false;
-                    }                    
-                    else if (CardReadProc == false)
+                    }
+                    else if (CardWriteProc == false)
                     {
                         DisplayDescription("カード書込みを中断しました。");
                         StatusPictureBox.Image = Properties.Resources.White;
                         InputModeChange();
                         _canceled = false;
-                    }                    
+                    }
                     else if (data != string.Empty)
                     {
                         DisplayingIssueMessages(data);
@@ -761,7 +791,7 @@ namespace MyNumberCard
                             StatusPictureBox.Image = Properties.Resources.Yellow;
                         }
                         DisplayingStatusMessages(stat);
-                        IssueWaitModeChange();
+                        InputModeChange();
                     }
                     IssueProc = false;
                 }
@@ -769,7 +799,7 @@ namespace MyNumberCard
                 {
                     MessageBox.Show(Properties.Resources.PDC230Error + "\n" + ex.Message, "システムエラー");
                     logger.Error(Properties.Resources.PDC230Error + ex.Message);
-                    StatusPictureBox.Image = Properties.Resources.White;                    
+                    StatusPictureBox.Image = Properties.Resources.White;
                     InputModeChange();
                 }
                 finally
@@ -818,19 +848,20 @@ namespace MyNumberCard
                 {
                     _canceled = true;
 
-                    if (CardReadProc == false)
+                    if (CardReadProc == false)      //add 2024/12/11
                     {
                         DisplayDescription("発行処理を中断しました。");
                         StatusPictureBox.Image = Properties.Resources.White;
                         InputModeChange();
                     }
+                    //add 2024/12/11 str                    
                     else
                     {
                         DisplayDescription("カード読取を中断しました。");
                         StatusPictureBox.Image = Properties.Resources.White;
                         InputModeChange();
                     }
-
+                    //add 2024/12/11 end
                 }
             }
 
@@ -898,12 +929,13 @@ namespace MyNumberCard
             //ダイアログを「設定」で終了した場合、設定値を取得する。
             if (res == true)
             {
+                //ポート番号取得
                 ComPortNum = dlgCom.ComPortNum;
-                PortName = "COM" + ComPortNum.ToString();  //ポート番号から名称を作成
-
+                //ポート番号から名称を作成
+                PortName = "COM" + ComPortNum.ToString();
                 //COMポートの設定保存
                 ClsIniFileHandler.WritePrivateProfileString("COM", "PORT", ComPortNum.ToString(), IniFilePath);
             }
-        }        
+        }
     }
 }

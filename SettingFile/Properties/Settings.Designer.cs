@@ -352,7 +352,7 @@ namespace ConfigFile.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public decimal BranchOffice_LengthMin {
             get {
                 return ((decimal)(this["BranchOffice_LengthMin"]));
