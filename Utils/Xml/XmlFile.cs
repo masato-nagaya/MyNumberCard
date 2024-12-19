@@ -12,15 +12,11 @@ namespace Utils.Xml
 
         private object _obj;
         public XmlFile(string path, object obj)
-        {
-            //if (!File.Exists(_path)) {
-            //	throw new IOException();
-            //}
+        {            
             _path = path;
             _obj = obj;
             _serializer = new XmlSerializer(obj.GetType());
         }
-
         public void Write(object obj)
         {
             try
@@ -84,8 +80,8 @@ namespace Utils.Xml
 
                     if (attempt >= maxRetries)
                     {
-                        // リトライ失敗時のエラーハンドリング
-                        throw new IOException("カード番号を取得出来ませんでした。時間を置いてから再度採番処理を実行してください。", ex);
+                        // リトライ失敗時のエラーハンドリング                        
+                        throw new IOException("設定ファイルを取得出来ませんでした。時間を置いてから再度実行してください。", ex);   
                     }
 
                     // リトライ間隔を指定して待機

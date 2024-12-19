@@ -157,6 +157,11 @@
             "AssemblyAsmDisplayName" = "8:Utils, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_954E08DA98DF16826E1747BC1591D42B"
+                    {
+                    "Name" = "8:Utils.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Utils.dll"
             "TargetName" = "8:"
@@ -183,6 +188,11 @@
             "AssemblyAsmDisplayName" = "8:EncodeData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_C1D07DB6A21B9E798120D7EE976133D5"
+                    {
+                    "Name" = "8:EncodeData.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:EncodeData.dll"
             "TargetName" = "8:"
@@ -333,7 +343,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"

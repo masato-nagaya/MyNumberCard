@@ -146,6 +146,13 @@ namespace MyNumberCard
                 logger.Debug("NumPath:" + numpath);
 
             }
+            catch (IOException ex)
+            {
+                MessageBox.Show(ex.Message, "ファイルオープンエラー");
+                logger.Error(Properties.Resources.PossibleCauses);
+                _inputmode = true;
+                Application.Exit();
+            }
             catch (Exception)
             {
                 MessageBox.Show(Properties.Resources.NotFoundConfigFile + "\nシステム管理者に問い合わせてください。", "システムエラー");
@@ -336,8 +343,8 @@ namespace MyNumberCard
                 ulong num = _NumberingMaster.Number;
                 int len = (int)_Settings.SealRegistration.Length;
                 if ((num).ToString().Length == len + 1)
-                {
-                    string msg = "カード番号が上限に達しました。\nシステム管理者に問い合わせてください。";
+                {                    
+                    string msg = "印鑑登録番号が上限に達しました。\nシステム管理者に問い合わせてください。";
                     MessageBox.Show(msg, "採番エラー");
                     logger.Error(msg);
                     InputModeChange();
@@ -356,6 +363,7 @@ namespace MyNumberCard
             catch (IOException ex)
             {
                 MessageBox.Show(ex.Message, "ファイルオープンエラー");
+                logger.Error(Properties.Resources.PossibleCauses);
                 InputModeChange();
             }
             //add 2024/12/11 end
@@ -379,8 +387,8 @@ namespace MyNumberCard
             IssueWaitModeChange();
             NumberingTextBox.Text = string.Empty;
             NumberingTextBox.ReadOnly = false;
-
-            DisplayDescription("カード番号を入力してください。");
+                        
+            DisplayDescription("印鑑登録番号を入力してください。");     
             NumberingProc = false;
             NumberingTextBox.Focus();
 
@@ -395,9 +403,9 @@ namespace MyNumberCard
 
         // 発行ボタンクリック
         private void IssueButton_Click(object sender, System.EventArgs e)
-        {
-            if (DialogResult.OK == MessageBox.Show("カードを発行します。宜しいですか？", "カード発行", MessageBoxButtons.OKCancel))
-            {
+        {            
+                if (DialogResult.OK == MessageBox.Show("カードを発行します。よろしいですか？", "カード発行", MessageBoxButtons.OKCancel))
+                {
 
                 StatusPictureBox.Image = Properties.Resources.Blue;
                 IssueingModeChange();
@@ -829,8 +837,8 @@ namespace MyNumberCard
             else
             {
                 if (NumberingProc == true)
-                {
-                    if (DialogResult.OK == MessageBox.Show("カード番号：" + NumberingTextBox.Text + "が無効になります。\r中断してもよろしいですか。", "発行中断", MessageBoxButtons.OKCancel))
+                {                    
+                    if (DialogResult.OK == MessageBox.Show("印鑑登録番号：" + NumberingTextBox.Text + "が無効になります。\r中断してもよろしいですか。", "発行中断", MessageBoxButtons.OKCancel))
                     {
                         _canceled = true;
                         //string data = (MunicipalCodeTextBox.Text + BranchOfficeTextBox.Text + NumberingTextBox.Text).PadRight(69, PaddingChar);   //del 2024/12/11                        

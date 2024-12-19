@@ -352,7 +352,7 @@ namespace ConfigFile.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public decimal BranchOffice_LengthMin {
             get {
                 return ((decimal)(this["BranchOffice_LengthMin"]));
@@ -593,6 +593,30 @@ namespace ConfigFile.Properties {
             }
             set {
                 this["SealRegistration_PaddingStatus"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ConfigFilePath {
+            get {
+                return ((string)(this["ConfigFilePath"]));
+            }
+            set {
+                this["ConfigFilePath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NumberingMasterPath {
+            get {
+                return ((string)(this["NumberingMasterPath"]));
+            }
+            set {
+                this["NumberingMasterPath"] = value;
             }
         }
     }

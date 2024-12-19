@@ -481,7 +481,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MyNumber"
         "ProductCode" = "8:{93DAC9B4-CBFB-4C12-9064-F5F66052A294}"
-        "PackageCode" = "8:{0227FFB1-A016-46F5-9C60-CD6E1974524F}"
+        "PackageCode" = "8:{8367D2A8-51CA-4C69-9F54-F66D37969017}"
         "UpgradeCode" = "8:{0AB91762-F3A9-4572-A84B-44BD39AA50B9}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -502,7 +502,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -603,7 +603,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2F69A4A219B4446699D8C513D92BB634"
             {
-            "Name" = "8:磁気書込みツール"
+            "Name" = "8:磁気書込ツール"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
