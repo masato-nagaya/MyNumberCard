@@ -15,7 +15,6 @@ namespace MyNumberCard
         private string ConfigdefaultFileName = "";
         private string NumberingMasterdefaultFileName = "";
 
-
         public Result Result { get; set; }
 
         public OwnSettingForm()

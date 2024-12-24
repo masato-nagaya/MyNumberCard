@@ -15,13 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_954E08DA98DF16826E1747BC1591D42B"
+        "MsmKey" = "8:_31524872CFF8414A8B22835FE0C5D7EE"
         "OwnerKey" = "8:_DF55E7969EE84EF2A82FA0CC1A350B18"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C1D07DB6A21B9E798120D7EE976133D5"
+        "MsmKey" = "8:_68607DFB01B4C02A4559E0422BA0E9FD"
         "OwnerKey" = "8:_DF55E7969EE84EF2A82FA0CC1A350B18"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -46,13 +46,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_954E08DA98DF16826E1747BC1591D42B"
+        "OwnerKey" = "8:_31524872CFF8414A8B22835FE0C5D7EE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C1D07DB6A21B9E798120D7EE976133D5"
+        "OwnerKey" = "8:_68607DFB01B4C02A4559E0422BA0E9FD"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -150,23 +150,18 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_954E08DA98DF16826E1747BC1591D42B"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_31524872CFF8414A8B22835FE0C5D7EE"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Utils, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_954E08DA98DF16826E1747BC1591D42B"
-                    {
-                    "Name" = "8:Utils.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Utils.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_457C5225739541DFA29102B7DE00BAA9"
+            "Folder" = "8:_C82155DF30D74160B3B2D6866346B236"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -181,23 +176,18 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C1D07DB6A21B9E798120D7EE976133D5"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_68607DFB01B4C02A4559E0422BA0E9FD"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:EncodeData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C1D07DB6A21B9E798120D7EE976133D5"
-                    {
-                    "Name" = "8:EncodeData.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:EncodeData.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_457C5225739541DFA29102B7DE00BAA9"
+            "Folder" = "8:_C82155DF30D74160B3B2D6866346B236"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -217,7 +207,7 @@
             "SourcePath" = "8:..\\SettingFile\\Picture\\config.ico"
             "TargetName" = "8:config.ico"
             "Tag" = "8:"
-            "Folder" = "8:_457C5225739541DFA29102B7DE00BAA9"
+            "Folder" = "8:_C82155DF30D74160B3B2D6866346B236"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -292,17 +282,6 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_457C5225739541DFA29102B7DE00BAA9"
-                    {
-                    "Name" = "8:Configger"
-                    "AlwaysCreate" = "11:FALSE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_40B32D6C8F1647A58B12165FA603471E"
-                        "Folders"
-                        {
-                        }
-                    }
                 }
             }
         }
@@ -444,7 +423,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5643BEBC911F4A76925835E0295C0975"
             {
-            "Name" = "8:設定ツール"
+            "Name" = "8:設定ファイル作成ツール"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -452,7 +431,7 @@
             "Transitive" = "11:FALSE"
             "Target" = "8:_DF55E7969EE84EF2A82FA0CC1A350B18"
             "Folder" = "8:_10E8AE9E2893440E9D4E8863DFF2C56F"
-            "WorkingFolder" = "8:_457C5225739541DFA29102B7DE00BAA9"
+            "WorkingFolder" = "8:"
             "Icon" = "8:_F579E084ED594D7FBBF86C48959EEEB2"
             "Feature" = "8:"
             }
@@ -857,10 +836,10 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_DF55E7969EE84EF2A82FA0CC1A350B18"
             {
-            "SourcePath" = "8:..\\SettingFile\\obj\\Debug\\ConfigFile_Ver1.exe"
+            "SourcePath" = "8:..\\SettingFile\\obj\\Release\\ConfigFile_Ver1.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_457C5225739541DFA29102B7DE00BAA9"
+            "Folder" = "8:_C82155DF30D74160B3B2D6866346B236"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"

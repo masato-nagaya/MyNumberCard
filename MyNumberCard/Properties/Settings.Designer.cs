@@ -66,18 +66,6 @@ namespace MyNumberCard.Properties {
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string PortNmae {
-            get {
-                return ((string)(this["PortNmae"]));
-            }
-            set {
-                this["PortNmae"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Configuration.SettingsProviderAttribute(typeof(Utils.Configuration.CommonSettingsProvider))]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("メイリオ, 12pt")]
@@ -88,6 +76,18 @@ namespace MyNumberCard.Properties {
             }
             set {
                 this["Font"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PortName {
+            get {
+                return ((string)(this["PortName"]));
+            }
+            set {
+                this["PortName"] = value;
             }
         }
     }

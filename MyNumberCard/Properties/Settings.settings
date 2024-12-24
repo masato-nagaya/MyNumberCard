@@ -11,11 +11,11 @@
     <Setting Name="IssueLogPath" Provider="Utils.Configuration.CommonSettingsProvider" Roaming="true" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="PortNmae" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="Font" Provider="Utils.Configuration.CommonSettingsProvider" Roaming="true" Type="System.Drawing.Font" Scope="User">
       <Value Profile="(Default)">メイリオ, 12pt</Value>
+    </Setting>
+    <Setting Name="PortName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

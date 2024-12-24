@@ -30,7 +30,7 @@ namespace MyNumberCard
                 }
                 if (args[0].IndexOf("/COM") >= 0)
                 {
-                    Settings.Default.PortNmae = args[0];
+                    Settings.Default.PortName = args[0];
                 }
             }
 

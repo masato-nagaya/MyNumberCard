@@ -113,6 +113,7 @@ namespace ConfigFile
                 {
                     BranchOfficeCheckBox.Checked = false;                    
                     BranchOfficeTextBox.Text = "";
+                    BranchOfficeTextBox.Enabled =false;
                 }
 
                 // 印鑑登録番号桁数
@@ -174,9 +175,17 @@ namespace ConfigFile
                 string numpath = Properties.Settings.Default.NumberingMasterPath;
                 _NumberingMasterFile = new XmlFile(numpath, _NumberingMaster);
                 _NumberingMaster = (NumberingMaster)_NumberingMasterFile.Read();
-                             
-                // 印鑑登録番号初期値
-                NumberingMasterTextBox.Text = _Settings.SealRegistration.Value;
+                ulong num = _NumberingMaster.Number;
+                int len = (int)_Settings.SealRegistration.Length;
+                if ((num).ToString().Length == len + 1)
+                {
+                    // 最大桁数オーバーの場合、デフォルト値を挿入                    
+                }
+                else
+                {
+                    // 印鑑登録番号初期値                    
+                    NumberingMasterTextBox.Text = num.ToString("D" + len.ToString());
+                }
             }
 
         }

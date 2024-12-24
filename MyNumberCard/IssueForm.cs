@@ -84,6 +84,7 @@ namespace MyNumberCard
                         //ファイルの中身を書き換え
                         ComPortNum = int.Parse(port[0].Replace("COM", ""));
                         ClsIniFileHandler.WritePrivateProfileString("COM", "PORT", ComPortNum.ToString(), IniFilePath);
+                        PortName = port[0];
                     }
                 }
             }
@@ -426,13 +427,13 @@ namespace MyNumberCard
                 else if (port.Length != 1)
                 {
                     //複数台
-                    if (Properties.Settings.Default.PortNmae != string.Empty)
+                    if (Properties.Settings.Default.PortName != string.Empty)
                     {
                         StatusPictureBox.Image = Properties.Resources.White;
                         IssueWaitModeChange();
                         return;
                     }
-                    port[0] = Properties.Settings.Default.PortNmae;
+                    port[0] = Properties.Settings.Default.PortName;
                 }
 
                 IssueProc = true;
@@ -440,7 +441,6 @@ namespace MyNumberCard
                 CardReadProc = false;   //add 2024/12/11
 
                 string data = string.Empty;
-                string stat = string.Empty;
 
                 PDC230 pdc230 = new PDC230(port[0], 9600, Parity.Even, 8, StopBits.One);
 
@@ -461,7 +461,8 @@ namespace MyNumberCard
                     pdc230.Insert();
 
                     DisplayDescription("発行処理を行います。カードを挿入してください。");
-                                       
+
+                    string stat;
                     while (true)
                     {
                         Thread.Sleep(200);
@@ -639,13 +640,13 @@ namespace MyNumberCard
                 else if (port.Length != 1)
                 {
                     //複数台
-                    if (Properties.Settings.Default.PortNmae != string.Empty)
+                    if (Properties.Settings.Default.PortName != string.Empty)
                     {
                         StatusPictureBox.Image = Properties.Resources.White;
                         InputModeChange();
                         return;
                     }
-                    port[0] = Properties.Settings.Default.PortNmae;
+                    port[0] = Properties.Settings.Default.PortName;
                 }
 
                 IssueProc = true;
@@ -709,11 +710,12 @@ namespace MyNumberCard
                         }
 
                         pdc230.Eject();
-
-                        DisplayDescription("カード読込完了。");
-
+                                                
                         if (!(stat != string.Empty))
                         {
+
+                            DisplayDescription("カード情報：" + data);
+
                             if (DialogResult.OK == MessageBox.Show("読み込んだカード情報を書込みますか？", "カード発行", MessageBoxButtons.OKCancel))
                             {
                                 //カード情報書込
