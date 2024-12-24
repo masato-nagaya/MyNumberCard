@@ -441,6 +441,7 @@ namespace MyNumberCard
                 CardReadProc = false;   //add 2024/12/11
 
                 string data = string.Empty;
+                int length = 0;
 
                 PDC230 pdc230 = new PDC230(port[0], 9600, Parity.Even, 8, StopBits.One);
 
@@ -489,8 +490,9 @@ namespace MyNumberCard
                             Application.DoEvents();
                             data = pdc230.GetData();
                             if (data != string.Empty)
-                            {
-                                OldcardInfo.Text = data;
+                            {                                
+                                OldcardInfo.Text = data;                                
+                                length = data.Length;
                                 break;
                             }
                             stat = pdc230.GetStatus();
@@ -515,7 +517,7 @@ namespace MyNumberCard
                             //add 2024/12/11 str
 
                             //pdc230.CardWrite(MunicipalCodeTextBox.Text + BranchOfficeTextBox.Text + NumberingTextBox.Text, PaddingChar);
-
+                            
                             //左詰め
                             if ((!(FirstPoint == 1) && PaddingcheckL == "Left"))
                             {
@@ -526,13 +528,20 @@ namespace MyNumberCard
                             }
                             else if ((!(FirstPoint == 1) && PaddingcheckL == "None"))
                             {
-                                //前のカード情報を取得・埋め込み                            
+                                //前のカード情報の文字数が開始位置未満の場合、不足分を空白で埋める                                
+                                if (length < FirstPoint)
+                                {                                    
+                                    width = FirstPoint - 1;
+                                    padding = ' ';
+                                    OldcardInfo.Text = OldcardInfo.Text.PadRight(width, padding);
+                                }
+                                //前のカード情報を取得・埋め込み                                
                                 cardReaderInfo.Text = OldcardInfo.Text.Substring(0, Math.Min(FirstPoint - 1, OldcardInfo.Text.Length));
                             }
 
                             //ヘッダー + 拠点 + 印鑑登録番号
                             cardReaderInfo.Text += MunicipalCodeTextBox.Text + BranchOfficeTextBox.Text + NumberingTextBox.Text;
-
+                            
                             //右詰め
                             if ((!(FirstPoint == 65) && PaddingcheckR == "Right"))
                             {
@@ -543,8 +552,11 @@ namespace MyNumberCard
                             }
                             else if ((!(FirstPoint == 65) && PaddingcheckR == "None"))
                             {
-                                //前のカード情報を取得・埋め込み                            
-                                cardReaderInfo.Text += OldcardInfo.Text.Substring(cardReaderInfo.Text.Length);
+                                //前のカード情報の文字数が最新カード情報の文字数以上の場合、前のカード情報を取得・埋め込み
+                                if (length > cardReaderInfo.Text.Length)
+                                {                                    
+                                    cardReaderInfo.Text += OldcardInfo.Text.Substring(cardReaderInfo.Text.Length);
+                                }
                             }
 
                             pdc230.CardWrite(cardReaderInfo.Text);
@@ -655,7 +667,7 @@ namespace MyNumberCard
                 CardWriteProc = true;
 
                 string data = string.Empty;
-                string stat = string.Empty;
+                string stat;
 
                 PDC230 pdc230 = new PDC230(port[0], 9600, Parity.Even, 8, StopBits.One);
 
